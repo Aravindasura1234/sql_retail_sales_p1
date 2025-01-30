@@ -186,6 +186,31 @@ SELECT
 FROM hourly_sale
 GROUP BY shift
 ```
+11. **--11.Customer Behavior:
+--What are the purchasing patterns across different demographics (e.g., age groups and gender) in terms of total sales and average spend**:
+```sql
+SELECT age,
+		gender,
+		SUM(total_sale) AS total_sales,
+		ROUND(AVG(total_sale)) as average_spending
+		FROM retail_sales
+		GROUP BY age,gender
+		ORDER BY age,gender;
+```
+ **12.Category Performance:
+Which product categories contribute the most to total sales and have the highest profit margins?**:
+```sql
+SELECT  category,
+	SUM(total_sale) AS total_sales,
+	ROUND(SUM(total_sale - cogs)) as profit_margin
+	FROM retail_sales
+	GROUP BY category
+	ORDER BY total_sales desc, profit_margin desc
+	;
+```
+
+
+
 
 ## Findings
 
