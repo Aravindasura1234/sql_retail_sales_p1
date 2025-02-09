@@ -8,7 +8,6 @@
 This project demonstrates SQL-based data analysis on a retail sales dataset. It covers database setup, data cleaning, exploratory data analysis (EDA), and business insights. The goal is to extract valuable insights to drive decision-making.
 
 ## Objectives
-
 1. **Database Setup – Create and populate the p1_retail_db for sales analysis.
 2.**Data Cleaning – Identify and remove missing or invalid records.
 3.**Exploratory Analysis – Understand key metrics like sales, customers, and categories.
